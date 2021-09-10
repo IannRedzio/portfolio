@@ -4,6 +4,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Technologies from "./components/technologies/Technologies";
 import Topbar from "./components/topbar/Topbar";
 import Works from "./components/works/Works";
+import "./app.scss";
 
 
 function App() {
