@@ -1,9 +1,61 @@
+import { useState } from "react";
 import "./portfolio.scss";
+import PortfolioList from "./portfolioList/PortfolioList";
 
 export default function Portfolio() {
+    const [selected, setSelected] = useState("featured")
+
+    const list = [
+        {
+          id: "featured",
+          title: "Featured",
+        },
+        {
+          id: "web",
+          title: "Web App",
+        },
+        {
+          id: "mobile",
+          title: "Mobile App",
+        },
+      ];
+
     return (
-        <div className="portfolio" id="portfolio">
-            portfolio
+      <div className="portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+        <ul>
+          {list.map((item) => (
+            <PortfolioList
+              title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+            />
+          ))}
+        </ul>
+        <div className="container">
+          <div className="item">
+            <img
+              src="https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif"
+              alt="videogames app"
+            />
+            <h3>Videogames App</h3>
+          </div>
+          <div className="item">
+            <img
+              src="https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif"
+              alt="videogames app"
+            />
+            <h3>Videogames App</h3>
+          </div>
+          <div className="item">
+            <img
+              src="https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif"
+              alt="videogames app"
+            />
+            <h3>Videogames App</h3>
+          </div>
         </div>
-    )
+      </div>
+    );
 }
