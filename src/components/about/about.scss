@@ -4,6 +4,28 @@
 
   .left {
     flex: 0.5;
+
+    .wrapper {
+      width: 80%;
+      height: 80%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        font-size: 45px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
 
   .right {
