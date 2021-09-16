@@ -1,5 +1,5 @@
 import "./intro.scss";
-import HomeImage from "../../assets/imagehome.png";
+import HomeImage from "../../assets/typing.png";
 import LineDown from "../../assets/down.png";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
@@ -31,7 +31,7 @@ export default function Intro() {
             <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#about">
           <img src={LineDown} alt="linedown" />
         </a>
       </div>
