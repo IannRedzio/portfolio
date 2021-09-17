@@ -1,6 +1,9 @@
 import { useState } from "react";
+import arrowLeft from "../../assets/arrow-left.png";
+import arrowRight from "../../assets/arrow-right.png";
+import gitIcon from "../../assets/github2.png";
+import sitioWeb from "../../assets/sitio.png";
 import "./portfolio.scss";
-import LineDown from "../../assets/down.png";
 
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,12 +13,14 @@ export default function Portfolio() {
       id: "1",
       title: "Videogames App",
       desc: "Proyecto SPA(Single Page Aplication) de Stack PERN..",
+      url: "https://github.com/IannRedzio/PI-Videogames-FT14a",
       img: "https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif",
     },
     {
       id: "2",
       title: "Spotify Songs",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      desc: "Proyecto SPA en el cual podemos reproducir y agregar como favoritos canciones de Spotify.",
+      url: "https://github.com/IannRedzio/PI-Videogames-FT14a",
       img: "https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif",
     },
     {
@@ -44,11 +49,11 @@ export default function Portfolio() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={d.icon} alt="" />
+                    <img src={gitIcon} alt="github"/>
+                    <img src={sitioWeb} alt="sitioWeb" />
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
                 </div>
               </div>
               <div className="right">
@@ -62,17 +67,18 @@ export default function Portfolio() {
         ))}
       </div>
       <img
-        src={LineDown}
+        src={arrowLeft}
+        alt="arrowLeft"
         className="arrow left"
-        alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src={LineDown}
+        src={arrowRight}
+        alt="arrowRight"
         className="arrow right"
-        alt=""
         onClick={() => handleClick()}
       />
     </div>
   );
 }
+
