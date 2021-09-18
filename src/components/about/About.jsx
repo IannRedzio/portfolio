@@ -9,16 +9,20 @@ export default function About() {
           <p>
             Desde pequeño, siempre me interesó la programación. Durante la
             escuela secundaria hice unos cursos de HTML y CSS super basicos y
-            ahi es donde desperté mi curiosidad hacia el desarrollo web. En Mayo
-            de 2021, logré entrar al bootcamp{" "}
+            ahi es donde desperté mi curiosidad hacia el desarrollo web.
+          </p>
+          <p>
+            En Mayo de 2021, logré entrar al bootcamp{" "}
             <a href="https://www.soyhenry.com/">
               <strong>SoyHenry</strong>
             </a>{" "}
             donde desarrollé y mastericé habilidades tecnicas para un desarrollo
-            web funcional, responsivo y adaptable. Actualmente soy desarrollador
-            Full Stack en búsqueda de desarrollar mi experiencia y mi carrera
-            profesional, con el fin de crecer en el ámbito tecnológico,
-            generando soluciones y buscando nuevos desafíos.
+            web funcional, responsivo y adaptable.
+          </p>
+          <p>
+            Actualmente soy desarrollador Full Stack en búsqueda de desarrollar
+            mi experiencia y mi carrera profesional, con el fin de crecer en el
+            ámbito tecnológico, generando soluciones y buscando nuevos desafíos.
           </p>
         </div>
       </div>

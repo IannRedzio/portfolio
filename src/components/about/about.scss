@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
 .about {
   background-color: white;
   display: flex;
@@ -20,10 +22,16 @@
 
       p {
         font-size: 18px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        line-height: 1.6;
+        margin-bottom: 10px;
       }
 
       a {
         text-decoration: none;
+        color: #6A0E0E;
       }
     }
   }

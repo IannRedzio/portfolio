@@ -14,6 +14,7 @@ export default function Portfolio() {
       title: "Videogames App",
       desc: "Proyecto SPA(Single Page Aplication) de Stack PERN..",
       url: "https://github.com/IannRedzio/PI-Videogames-FT14a",
+      urlPage: "https://github.com/IannRedzio/PI-Videogames-FT14a",
       img: "https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif",
     },
     {
@@ -26,6 +27,7 @@ export default function Portfolio() {
     {
       id: "3",
       title: "Nala",
+      urlPage: "https://nalarocks.com/",
       desc: "Proyecto de Frontend desarrollado para NALA ROCKS como proyecto final para el bootcamp SoyHenry.",
       img: "https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif",
     },
@@ -49,8 +51,12 @@ export default function Portfolio() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={gitIcon} alt="github"/>
-                    <img src={sitioWeb} alt="sitioWeb" />
+                    <div className="button" onClick={() => window.open(d.url, "_blank")} fontSize="inherit">
+                     <img src={gitIcon} alt="github" /> 
+                    </div>
+                    <div className="button" onClick={() => window.open(d.urlPage, "_blank")} fontSize="inherit" >
+                      <img src={sitioWeb} alt="sitioWeb" />
+                    </div>
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
