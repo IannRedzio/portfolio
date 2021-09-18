@@ -23,6 +23,14 @@ const data = [
     desc: "Proyecto de Frontend desarrollado para NALA ROCKS como proyecto final para el bootcamp SoyHenry.",
     img: mainUrl + "/Nala.png",
   },
+  {
+    id: "4",
+    title: "Expenses-React",
+    urlPage: "https://expenses-react.vercel.app/",
+    url: "https://github.com/IannRedzio/Expenses-practice-TS",
+    desc: "Proyecto sobre gastos hecho con react y tambien mi primer proyecto con Typescript",
+    img: "https://user-images.githubusercontent.com/81378921/131145650-f02a94fc-d4ad-4868-8d17-7a38162ed40d.gif",
+  }
 ];
 
 export default data;
