@@ -4,6 +4,11 @@
   background-color: white;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
 
@@ -17,8 +22,16 @@
       margin-left: auto;
       margin-right: auto;
 
+      @include mobile {
+        align-items: flex-start;
+      }
+
       img {
         height: 90%;
+
+        @include mobile {
+          height: 50%;
+        }
       }
     }
   }
@@ -35,9 +48,19 @@
       flex-direction: column;
       justify-content: center;
 
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 {
         font-size: 60px;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px ;
+        }
       }
       h2 {
         font-size: 35px;
@@ -45,9 +68,13 @@
       h3 {
         font-size: 30px;
 
+        @include mobile {
+          font-size: 30px ;
+        }
+
         span {
           font-size: inherit;
-          color: $mainColor;
+          color: $mainColor; 
         }
 
         .ityped-cursor {

@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+@import "../../global.scss";
 
 .about {
   background-color: white;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
@@ -18,6 +24,10 @@
       h2 {
         font-size: 45px;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 10px ;
+        }
       }
 
       p {
@@ -27,6 +37,10 @@
         color: black;
         line-height: 1.6;
         margin-bottom: 10px;
+
+        @include mobile {
+          font-size: 8px ;
+        }
       }
 
       a {
@@ -49,8 +63,16 @@
       margin-left: auto;
       margin-right: auto;
 
+      @include mobile {
+        align-items: flex-start;
+      }
+
       img {
         height: 90%;
+
+        @include mobile {
+          height: 50%;
+        }
       }
     }
   }
