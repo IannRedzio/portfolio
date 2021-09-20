@@ -14,8 +14,7 @@
     flex: 0.5;
 
     .imageContainer {
-      width: 500px;
-      height: 500px;
+      height: 80vh;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -25,13 +24,14 @@
 
       @include mobile {
         align-items: flex-start;
+        height: 40vh;
       }
 
       img {
         height: 90%;
 
         @include mobile {
-          height: 50%;
+          height: 100%;
         }
       }
     }
