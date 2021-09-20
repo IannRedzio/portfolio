@@ -4,11 +4,11 @@ import arrowRight from "../../assets/arrow-right.png";
 import gitIcon from "../../assets/github2.png";
 import sitioWeb from "../../assets/sitio.png";
 import data from "../../common/data";
+import ReactPlayer from "react-player";
 import "./portfolio.scss";
 
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
 
   const handleClick = (way) => {
     way === "left"
@@ -28,10 +28,18 @@ export default function Portfolio() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <div className="button" onClick={() => window.open(d.url, "_blank")} fontSize="inherit">
-                     <img src={gitIcon} alt="github" /> 
+                    <div
+                      className="button"
+                      onClick={() => window.open(d.url, "_blank")}
+                      fontSize="inherit"
+                    >
+                      <img src={gitIcon} alt="github" />
                     </div>
-                    <div className="button" onClick={() => window.open(d.urlPage, "_blank")} fontSize="inherit" >
+                    <div
+                      className="button"
+                      onClick={() => window.open(d.urlPage, "_blank")}
+                      fontSize="inherit"
+                    >
                       <img src={sitioWeb} alt="sitioWeb" />
                     </div>
                   </div>
@@ -40,10 +48,16 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="right">
-                <img
-                  src={d.img}
-                  alt=""
-                />
+                {d.video ? (
+                  <ReactPlayer
+                    url={d.video}
+                    controls={true}
+                    playing={true}
+                    loop={true}
+                  />
+                ) : (
+                  <img src={d.img} alt="" />
+                )}
               </div>
             </div>
           </div>
@@ -64,4 +78,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
