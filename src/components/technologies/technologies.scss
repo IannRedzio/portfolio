@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .technologies {
   background-color: white;
   display: flex;
@@ -11,16 +13,16 @@
     flex-direction: column;
     justify-self: center;
     align-self: center;
-    margin-top: -50px;
+    margin-top: -5%;
 
     h2 {
-      margin: 10px;
+      margin: 1%;
     }
 
     .container {
       // border: 1px solid black;
       height: 100%;
-      width: 1000px;
+      width: 80%;
       padding: 3rem;
       display: flex;
       flex-wrap: wrap;
@@ -29,18 +31,27 @@
       .items {
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin: 2%;
         text-align: center;
         height: fit-content;
 
         h3 {
           margin-top: 5px;
           overflow: hidden;
+
+          @include mobile {
+            font-size: 10px;
+          }
         }
 
         img {
           height: 100%;
           width: 80px;
+
+          @include mobile {
+            height: 10%;
+            width: 42px;
+          }
         }
       }
     }

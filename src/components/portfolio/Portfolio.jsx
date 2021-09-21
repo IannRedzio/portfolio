@@ -56,7 +56,7 @@ export default function Portfolio() {
                     loop={true}
                   />
                 ) : (
-                  <img src={d.img} alt="" />
+                  <img src={d.img} alt={d.title} />
                 )}
               </div>
             </div>

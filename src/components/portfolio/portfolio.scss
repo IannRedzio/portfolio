@@ -8,25 +8,27 @@
   position: relative;
 
   .arrow {
-    height: 50px;
+    height: 6%;
     position: absolute;
     cursor: pointer;
 
+
     &.left {
-      left: 100px;
+      left: 9%;
     }
 
     &.right {
-      right: 100px;
+      right: 9%;
     }
   }
 
   .slider {
-    height: 350px;
+    height: 65%;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
 
     .container {
       width: 100vw;
@@ -35,13 +37,14 @@
       justify-content: center;
 
       .item {
-        width: 700px;
-        height: 330px;
+        width: 55%;
+        height: 90%;
         border: 4px solid black;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+
 
         .left {
           flex: 4;
@@ -58,26 +61,34 @@
             justify-content: space-between;
 
             .imgContainer {
-              width: 80px;
-              height: 80px;
+              width: 35%;
+              height: 50%;
               border-radius: 50%;
               display: flex;
               align-items: center;
               justify-content: center;
+
+        
+
+           
 
               .button {
                 cursor: pointer;
               }
 
               img {
-                height: 30px;
-                width: 30px;
-                margin: 5px;
+                height: 15%;
+                width: 65%;
+                margin: 5%;
+                
               }
             }
 
             h2 {
               font-size: 20px;
+
+              
+              
             }
             p {
               font-size: 13px;
@@ -94,8 +105,8 @@
           overflow: hidden;
 
           img {
-            width: 450px;
-            border-radius: 10px;
+            width: 90%;
+            border-radius: 10px; 
           }
         }
       }
