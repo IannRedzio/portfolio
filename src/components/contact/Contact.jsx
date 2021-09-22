@@ -3,6 +3,7 @@ import resumeImg from "../../assets/resume.png";
 import linkedIn from "../../assets/linkedIn.png";
 import gitHub from "../../assets/github2.png";
 import mail from "../../assets/mail.png";
+import cv from "../../assets/CV.png";
 
 export default function Contact() {
   return (
@@ -20,15 +21,41 @@ export default function Contact() {
             contactarme aca:
           </p>
           <div className="items">
-              <div className="button" onClick={() => window.open("https://www.linkedin.com/in/ian-redzio/", "_blank")} fontSize="inherit">
-                <img src={linkedIn} alt="linkedin" />  
-              </div>
-              <div className="button" onClick={() => window.open("https://github.com/IannRedzio", "_blank")} fontSize="inherit">
-                <img src={gitHub} alt="github" />  
-              </div>
-              <div className="button" onClick={() => window.open("mailto:ianredzio13@gmail.com", "_blank")} fontSize="inherit">
-                <img src={mail} alt="mail" />  
-              </div>
+            <div
+              className="button"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/ian-redzio/", "_blank")
+              }
+              fontSize="inherit"
+            >
+              <img src={linkedIn} alt="linkedin" />
+            </div>
+            <div
+              className="button"
+              onClick={() =>
+                window.open("https://github.com/IannRedzio", "_blank")
+              }
+              fontSize="inherit"
+            >
+              <img src={gitHub} alt="github" />
+            </div>
+            <div
+              className="button"
+              onClick={() =>
+                window.open("mailto:ianredzio13@gmail.com", "_blank")
+              }
+              fontSize="inherit"
+            >
+              <img src={mail} alt="mail" />
+            </div>
+            <div className="button">
+              <a
+                download={"Ian Redzio_Full Stack_ES.pdf"}
+                href={"/Ian Redzio_Full Stack_ES.pdf"}
+              >
+                <img src={cv} alt="cv" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
