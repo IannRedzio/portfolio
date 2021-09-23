@@ -13,8 +13,8 @@ const data = [
     id: "2",
     title: "Spotify Songs",
     desc: "Proyecto SPA en el cual podemos reproducir y agregar como favoritos canciones de Spotify.",
-    url: "https://github.com/IannRedzio/PI-Videogames-FT14a",
-    img: mainUrl + "/ExpensesApp.gif",
+    url: "https://github.com/IannRedzio?tab=repositories",
+    img: mainUrl + "/spotify1.gif",
   },
   {
     id: "3",
