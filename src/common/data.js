@@ -33,6 +33,14 @@ const data = [
     desc: "Proyecto sobre gastos hecho con react y tambien mi primer proyecto con Typescript",
     img: mainUrl + "/ExpensesApp.gif",
   },
+  {
+    id: "5",
+    title: "Quizz App",
+    urlPage: "https://quizz-app-eight.vercel.app/",
+    url: "https://github.com/IannRedzio/quizz-app",
+    desc: "SPA en el cual podemos jugar el famoso juego ¿Quien quiere ser millonario? Usando React",
+    img: mainUrl + "/Quizz.gif",
+  },
 ];
 
 export default data;
