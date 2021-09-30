@@ -41,6 +41,14 @@ const data = [
     desc: "SPA en el cual podemos jugar el famoso juego ¿Quien quiere ser millonario? Usando React",
     img: mainUrl + "/Quizz.gif",
   },
+  {
+    id: "6",
+    title: "Google Homepage",
+    urlPage: "https://google-clon-homepage.vercel.app/",
+    url: "https://github.com/IannRedzio/google-homepage",
+    desc: "SPA hecha para practicar React, Styled Components y CSS",
+    img: mainUrl + "/google.png",
+  },
 ];
 
 export default data;
