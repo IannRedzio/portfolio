@@ -49,6 +49,14 @@ const data = [
     desc: "SPA hecha para practicar React, Styled Components y CSS",
     img: mainUrl + "/google.png",
   },
+  {
+    id: "7",
+    title: "Tesla Clone",
+    urlPage: "https://tesla-clone-psi.vercel.app/#",
+    url: "https://github.com/IannRedzio/tesla-clone",
+    desc: "SPA basada en la pagina oficial de tesla hecha con React, Redux, Styled Components y React Reveal",
+    img: mainUrl + "/tesla.png",
+  },
 ];
 
 export default data;
