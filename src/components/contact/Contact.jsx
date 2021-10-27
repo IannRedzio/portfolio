@@ -29,6 +29,7 @@ export default function Contact() {
               fontSize="inherit"
             >
               <img src={linkedIn} alt="linkedin" />
+              <h5>LinkedIn</h5>
             </div>
             <div
               className="button"
@@ -38,6 +39,7 @@ export default function Contact() {
               fontSize="inherit"
             >
               <img src={gitHub} alt="github" />
+              <h5>Github</h5>
             </div>
             <div
               className="button"
@@ -47,6 +49,7 @@ export default function Contact() {
               fontSize="inherit"
             >
               <img src={mail} alt="mail" />
+              <h5>Gmail</h5>
             </div>
             <div className="button">
               <a
@@ -55,6 +58,7 @@ export default function Contact() {
               >
                 <img src={cv} alt="cv" />
               </a>
+              <h5 fontSize="20px">Mi CV!</h5>
             </div>
           </div>
         </div>
