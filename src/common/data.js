@@ -65,6 +65,14 @@ const data = [
     desc: "SPA basada en la pagina oficial de tesla hecha con React, Redux, Styled Components y React Reveal",
     img: mainUrl + "/tesla.png",
   },
+  {
+    id: "9",
+    title: "Desarrollador UI - Lyracons",
+    urlPage: "https://www.lyracons.com/",
+    url: "https://www.lyracons.com/",
+    desc: "Frontend Developer en empresa de E-commerce. Desarrollo de features con Vtex Legacy y IO utilizando tambien tecnologías como React, GraphQL.",
+    img: mainUrl + "/lyracons.png",
+  },
 ];
 
 export default data;

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import arrowLeft from "../../assets/arrow-left.png";
-import arrowRight from "../../assets/arrow-right.png";
-import gitIcon from "../../assets/github2.png";
-import sitioWeb from "../../assets/sitio.png";
 import data from "../../common/data";
 import ReactPlayer from "react-player";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WebIcon from "@mui/icons-material/Web";
+import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import "./portfolio.scss";
 
 export default function Portfolio() {
@@ -33,14 +33,14 @@ export default function Portfolio() {
                       onClick={() => window.open(d.url, "_blank")}
                       fontSize="inherit"
                     >
-                      <img src={gitIcon} alt="github" />
+                      <GitHubIcon className="icon" />
                     </div>
                     <div
                       className="button"
                       onClick={() => window.open(d.urlPage, "_blank")}
                       fontSize="inherit"
                     >
-                      <img src={sitioWeb} alt="sitioWeb" />
+                      <WebIcon className="icon" />
                     </div>
                   </div>
                   <h2>{d.title}</h2>
@@ -63,15 +63,11 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <img
-        src={arrowLeft}
-        alt="arrowLeft"
+      <ArrowBackIosOutlinedIcon
         className="arrow left"
         onClick={() => handleClick("left")}
       />
-      <img
-        src={arrowRight}
-        alt="arrowRight"
+      <ArrowForwardIosOutlinedIcon
         className="arrow right"
         onClick={() => handleClick()}
       />

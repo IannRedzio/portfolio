@@ -1,19 +1,19 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
   .arrow {
-    height: 6%;
     position: absolute;
     cursor: pointer;
+    color: whitesmoke;
+    font-size: 30px;
 
     &.left {
-      left: 9%;
+      left: 1%;
 
       @include mobile {
         bottom: 1%;
@@ -21,7 +21,7 @@
     }
 
     &.right {
-      right: 9%;
+      right: 1%;
 
       @include mobile {
         bottom: 1%;
@@ -30,14 +30,14 @@
   }
 
   .slider {
-    height: 85%;
+    height: 100%;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 87%;
+      height: 90%;
     }
 
     .container {
@@ -48,16 +48,16 @@
       justify-content: center;
 
       .item {
-        width: 70%;
-        height: 98%;
-        border: 4px solid black;
+        width: 90%;
+        height: 95%;
+        border: 4px solid whitesmoke;
         border-radius: 20px;
         display: grid;
         grid-template-columns: 1fr 3fr;
 
         @include mobile {
           width: 84%;
-          height: 88%;
+          height: 90%;
           grid-template-columns: 1fr;
           grid-template-rows: 1fr 1fr;
           padding: 10px 0;
@@ -83,13 +83,25 @@
             gap: 10px;
 
             .imgContainer {
-              width: 45%;
               display: flex;
-              align-items: center;
-              justify-content: center;
 
               .button {
                 cursor: pointer;
+                color: grey;
+
+                &:hover {
+                  color: #64f4ac;
+                  transition: all 0.3s ease-in-out;
+                }
+
+                .icon {
+                  font-size: 50px;
+                  margin-right: 15px;
+
+                  @include mobile {
+                    font-size: 30px;
+                  }
+                }
               }
 
               img {
@@ -101,10 +113,20 @@
 
             h2 {
               font-size: 25px;
+              color: #64f4ac;
+
+              @include mobile {
+                font-size: 20px;
+              }
             }
             p {
               font-size: 15px;
-              font-weight: 400;
+              font-weight: 900;
+              color: whitesmoke;
+
+              @include mobile {
+                font-weight: 600;
+              }
             }
           }
         }

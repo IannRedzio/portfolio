@@ -2,7 +2,6 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
   display: flex;
 
   @include mobile {
@@ -52,6 +51,7 @@
       h3 {
         font-size: 35px;
         margin-bottom: 20px;
+        color: #64f4ac;
 
         @include mobile {
           font-size: 25px;
@@ -60,6 +60,8 @@
 
       p {
         padding: 0 10px;
+        font-size: 20px;
+        color: whitesmoke;
         font-weight: 700;
         font-family: "Montserrat", sans-serif;
 
@@ -87,14 +89,36 @@
 
         .button {
           cursor: pointer;
+          text-decoration: none;
+
+          a {
+            text-decoration: none;
+          }
+
+          .icon {
+            font-size: 50px;
+            color: whitesmoke;
+
+            &:hover {
+              color: #64f4ac;
+              transition: all 0.3s ease-in-out;
+            }
+          }
         }
 
         h5 {
-          text-align: center;
           font-size: 18px;
+          color: whitesmoke;
+          margin: 20px;
+
+          &:hover {
+            color: #64f4ac;
+            transition: all 0.3s ease-in-out;
+          }
 
           @include mobile {
-            font-size: 15px;
+            font-size: 10px;
+            margin: 15px;
           }
         }
       }

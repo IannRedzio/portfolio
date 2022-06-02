@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .technologies {
-  background-color: white;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -13,10 +12,13 @@
     flex-direction: column;
     justify-self: center;
     align-self: center;
-    margin-top: -5%;
+    margin-bottom: 2%;
 
     h2 {
       margin: 1%;
+      color: #64f4ac;
+      font-size: 28px;
+      font-weight: bold;
     }
 
     .container {
@@ -28,16 +30,29 @@
       flex-wrap: wrap;
       justify-content: center;
 
+      @include mobile {
+        width: 100%;
+        padding: 0;
+      }
+
       .items {
         display: flex;
         flex-direction: column;
-        margin: 2%;
+        margin: 3%;
         text-align: center;
         height: fit-content;
 
         h3 {
-          margin-top: 5px;
+          margin-top: 20px;
           overflow: hidden;
+          color: whitesmoke;
+          font-size: 20px;
+          font-weight: bold;
+
+          &:hover {
+            color: #64f4ac;
+            cursor: pointer;
+          }
 
           @include mobile {
             font-size: 10px;
